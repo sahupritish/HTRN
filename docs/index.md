@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## Challenges in Procedural Multimodal Machine Comprehension:A Novel Way To Benchmark
 
-You can use the [editor on GitHub](https://github.com/sahupritish/HTRN/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+[Link](Challenges in Procedural Multimodal Machine Comprehension: A Novel Way To Benchmark)
+Pritish Sahu, Karan Sikka, Ajay Divakaran
+SRI International and Rutgers University
+WACV 2020
+[Link](Paper) [Link](code)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Introduction
 
-### Markdown
+We focus on Multimodal Machine Reading Comprehension (M3C) where a model is expected to answer questions based on given passage (or context) and the context and
+the questions can be in different modalities. Previous works such as RecipeQA have proposed datasets and cloze-style tasks for evaluation. However, we identify three critical biases stemming from the question-answer generation process and memorization capabilities of large deep models. These biases makes it easier for a model to overfit by relying on spurious correlations or naive data patterns (image background). We propose a systematic framework to address these biases through three Control-Knobs that enable us to generate a test bed of datasets of progressive difficulty levels. We believe that our benchmark (referred to as Meta-
+RecipeQA) will provide, for the first time, a finer grained estimate of a model’s generalization capabilities. We also propose a general M 3 C model that is used to realize several prior SOTA models and motivate a novel hierarchical transformer based reasoning network (HTRN). We perform a detailed evaluation of these models with different language and visual features on our benchmark. We observe a consistent improvement with HTRN over SOTA (∼ 18% in Visual Cloze task and ∼ 13% in average over all the tasks). We also observe a drop in performance across all the models when testing on RecipeQA and proposed Meta–RecipeQA (e.g. 83.6% versus 67.1% for HTRN), which shows that the  proposed dataset is much less biased. We conclude by highlighting the impact of the control knobs with some quantitative results.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sahupritish/HTRN/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
